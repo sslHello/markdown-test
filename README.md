@@ -69,21 +69,21 @@ Automated dynamic scanning which exercises the application may provide insight i
     <u><b>Scenario #1:</b></u> An application uses untrusted data in the construction of the following '''vulnerable''' SQL call:
  <!--- {{Top_10_2010:ExampleBeginTemplate|year=2017}} --->
  <!--- <b><span style="color:red;"> --->
-    String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
+     String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
  <!--- </span></b> ---> 
  <!--- {{Top_10_2010:ExampleEndTemplate}} --->
 
 <u><b>Scenario #2:</b></u> Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable, (e.g., Hibernate Query Language (HQL)):
  <!--- {{Top_10_2010:ExampleBeginTemplate|year=2017}} --->
  <!--- <b><span style="color:red;"> --->
-    Query HQLQuery = session.createQuery("FROM accounts
-    WHERE custID='" + request.getParameter("id") + "'");'
+     Query HQLQuery = session.createQuery("FROM accounts
+     WHERE custID='" + request.getParameter("id") + "'");'
  <!--- </span></b> --->
  <!--- {{Top_10_2010:ExampleEndTemplate}} --->
 In both cases, the attacker modifies the ‘id’ parameter value in her browser to send: <span style="color:red;">' or '1'='1</span>. For example: 
  <!--- {{Top_10_2010:ExampleBeginTemplate|year=2017}} --->
  <!--- <b><span style="color:red;"><nowiki> --->
-   http://example.com/app/accountView?id=' or '1'='1 
+     http://example.com/app/accountView?id=' or '1'='1 
  <!--- </nowiki></span></b> --->
  <!--- {{Top_10_2010:ExampleEndTemplate}} --->
 This changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify data or even invoke stored procedures.
