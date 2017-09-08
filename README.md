@@ -91,7 +91,7 @@ This changes the meaning of both queries to return all the records from the acco
     </td>
     <td width="50%">
  <!--- {{Top_10_2010:SubsectionAdvancedTemplate|type={{Top_10_2010:StyleTemplate}}|subsection=references|position=right|risk=1|year=2017|language=en}} --->
-
+ <!--- {{Top_10_2010:SubSubsectionOWASPReferencesTemplate}} --->
 <b>OWASP</b>
 * <u>[[SQL_Injection_Prevention_Cheat_Sheet | OWASP SQL Injection Prevention Cheat Sheet]]</u>
 * <u>[[Query_Parameterization_Cheat_Sheet | OWASP Query Parameterization Cheat Sheet]]</u>
