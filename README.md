@@ -90,6 +90,7 @@ http://example.com/app/accountView?id=' or '1'='1
 This changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify data or even invoke stored procedures.
     </td>
     <td width="50%">
+ <!--- {{Top_10_2010:SubsectionAdvancedTemplate|type={{Top_10_2010:StyleTemplate}}|subsection=references|position=right|risk=1|year=2017|language=en}} --->
 
 <b>OWASP</b>
 * <u>[[SQL_Injection_Prevention_Cheat_Sheet | OWASP SQL Injection Prevention Cheat Sheet]]</u>
