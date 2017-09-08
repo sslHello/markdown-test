@@ -66,9 +66,9 @@ Automated dynamic scanning which exercises the application may provide insight i
 <tr valign="top";> 
     <td width="50%">
  <!--- {{Top_10_2010:SubsectionAdvancedTemplate|type={{Top_10_2010:StyleTemplate}}|subsection=example|position=left|risk=1|year=2017|language=en}} --->
-    <u><b>Scenario #1:</b></u> An application uses untrusted data in the construction of the following '''vulnerable''' SQL call:
- <!--- {{Top_10_2010:ExampleBeginTemplate|year=2017}} --->
- <!--- <b><span style="color:red;"> --->
+    <u><b>Scenario #1:</b></u> An application uses untrusted data in the construction of the following <b>vulnerable</b> SQL call:
+ <!--- {{Top_10_2010:ExampleBeginTemplate|year=2017}} ---> 
+ <!--- <b><span style="color:red;"> ---> 
      String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
  <!--- </span></b> ---> 
  <!--- {{Top_10_2010:ExampleEndTemplate}} --->
