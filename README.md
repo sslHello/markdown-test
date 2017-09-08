@@ -105,7 +105,7 @@ This changes the meaning of both queries to return all the records from the acco
 * <u>[http://cwe.mitre.org/data/definitions/89.html CWE Entry 89 on SQL Injection]</u>
 * <u>[http://cwe.mitre.org/data/definitions/564.html CWE Entry 564 on Hibernate Injection]</u>
 * <u>[http://cwe.mitre.org/data/definitions/611.html CWE Entry 611 on Improper Restriction of XXE]</u>
-* <u>[http://cwe.mitre.org/data/definitions/917.html|CWE Entry 917 on Expression Language Injection]</u>
+* <u>[http://cwe.mitre.org/data/definitions/917.html CWE Entry 917 on Expression Language Injection]</u>
     </td>
 </tr>
 </table>
